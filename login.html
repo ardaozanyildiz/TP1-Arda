@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp1 Liste de tâches</title>
+    <link rel="stylesheet" href="./CSS/login.css">
+
+</head>
+
+    <body>
+    <div id="text">
+      <p>Veuillez vous inscrire si vous ne possédez pas déjà un compte, sinon connectez-vous.</p>
+    </div>
+
+
+    <!--Le code pour creer le bouton pour se connecter-->
+
+    <div class="boutonConnection">
+      <button onclick="document.getElementById('id01').style.display='block'">Se connecter</button>
+    </div>
+    <!--Le code pour creer le bouton pour s'inscrire-->
+    <div class="boutonInscription">
+      <button onclick="document.getElementById('id02').style.display='block'">S'inscrire</button>
+    </div>
+
+    <!--Login-->
+    <!--Pour ouvrir la petite page qui permet de se connecter-->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+
+
+    <form class="modal-content animate" action="tache.html">
+      <!--L'espace pour entrer le username-->
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" id="usernameLogIn" placeholder="Enter Username" name="uname" required>
+      <!--L'espace pour entrer le mot de passe-->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="passwordLogIn" placeholder="Enter Password" name="psw" required>
+      <!--Le bouton pour se connecter-->
+        <button type="button" id="logInRequest" onclick="LogIn()">Log in</button>
+      </div>
+      <!--Pour fermer la petite page-->
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+
+    
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <!--L'espace pour entrer le username-->
+        <label for="uname"><b>Username</b></label>
+        <input type="text" id="usernameInfo" placeholder="Enter Username" name="uname" required>
+        <!--L'espace pour entrer le mot de passe-->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="pswInfo" placeholder="Enter Password" name="psw" required>
+        <!--L'espace pour re-entrer le mot de passe-->
+        <label for="pswRepeat"><b>Repeat Password</b></label>
+        <input type="password" id="pswInfoRepeat" placeholder="Enter Password Again" name="psw" required>
+        <!--Bouton pour enregistrer-->
+        <button type="button" id="RegisterRequest" onclick="Register()">Register</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+    
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+/**le css pour la page des taches*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(82, 82, 82);
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h1{
+    margin-top: 0px;
+    margin-left: 23px;
+}
+
+.container{
+    
+    max-width:550px;
+    margin: 80px auto;
+    padding: 35px;
+    border: 6px solid #000000;
+    border-radius: 60px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.caseInput{
+    margin-left: 125px;
+
+}
+
+button{
+    
+    padding:  3px 8px;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: red;
+    
+
+}
+
+#taskDone{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+
+
+.w3-sidebar{
+    height:19%;
+    width:250px;
+    background-color:rgb(255, 255, 255);
+    position:fixed!important;
+    border-radius: 10px;
+
+}
+.w3-bar-block .w3-bar-item{
+    width:50%;display: flex;
+    padding:10px;
+    text-align:center;
+    white-space:normal;   
+
+}
+
+
+.w3-bar-block.w3-center .w3-bar-item{
+    text-align:center
+}
+
+.w3-block{
+    display:block;
+    width:30%
+}
+
+#div1{
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#div2{
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+#div3{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
